@@ -80,11 +80,11 @@ public class TouchTest : MonoBehaviour
         //     cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, z);
         // }
 
-        if(Input.touchCount != 1)
-            return;
+        // if(Input.touchCount != 1)
+        //     return;
 
-        var touch = Input.GetTouch(0);
+        // var touch = Input.GetTouch(0);
 
-        cam.transform.position -= (Vector3) touch.deltaPosition * 0.01f;
+        // cam.transform.position -= (Vector3) touch.deltaPosition * 0.01f;
     }
 }
