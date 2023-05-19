@@ -660,7 +660,6 @@ GameObject:
   - component: {fileID: 7049526700901164206}
   - component: {fileID: 7049526700901164204}
   - component: {fileID: 7049526700901164207}
-  - component: {fileID: 7049526700901164205}
   m_Layer: 5
   m_Name: Option Panel
   m_TagString: Untagged
@@ -727,24 +726,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7049526700901164205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7049526700901164209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efe60d5122dcca499a791cbeac96038, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
-  muteToggle: {fileID: 0}
-  bgmSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
-  bgmVolText: {fileID: 0}
-  sfxVolText: {fileID: 0}
 --- !u!1 &7049526700922656861
 GameObject:
   m_ObjectHideFlags: 0

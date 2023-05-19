@@ -294,7 +294,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 650, y: 450}
+  m_SizeDelta: {x: 825, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196177927
 MonoBehaviour:
@@ -318,8 +318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Labyrinth Hole
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c15e68ca12845e542924ea7d4a8608a2, type: 2}
-  m_sharedMaterial: {fileID: 4271265769317217433, guid: c15e68ca12845e542924ea7d4a8608a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3eeda7154857ee042aefa89d8ee99e0a, type: 2}
+  m_sharedMaterial: {fileID: -6745627083711721836, guid: 3eeda7154857ee042aefa89d8ee99e0a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -343,13 +343,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 33
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -784,10 +784,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7049526700901164206, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
   m_PrefabInstance: {fileID: 7049526700532802046}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &440124755 stripped
+--- !u!114 &440124761
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-  m_PrefabInstance: {fileID: 7049526700532802046}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440124751}
   m_Enabled: 1
@@ -795,6 +796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efe60d5122dcca499a791cbeac96038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 1851238421}
+  muteToggle: {fileID: 1638286832}
+  bgmSlider: {fileID: 986417632}
+  sfxSlider: {fileID: 1639154338}
+  bgmVolText: {fileID: 1013615931}
+  sfxVolText: {fileID: 1707783027}
 --- !u!1 &459594407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1670,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5532563300547426272, guid: f38476906b356af49a1b5f8255e619f3, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 63f01ca2aa9fcfd45b52714eba5ebb4a, type: 3}
     - target: {fileID: 5532563301030722613, guid: f38476906b356af49a1b5f8255e619f3, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1755,7 +1766,7 @@ PrefabInstance:
     - target: {fileID: 7049526700352743454, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 440124755}
+      objectReference: {fileID: 440124761}
     - target: {fileID: 7049526700352743454, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1864,30 +1875,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: bgmSlider
-      value: 
-      objectReference: {fileID: 986417632}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: sfxSlider
-      value: 
-      objectReference: {fileID: 1639154338}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: bgmVolText
-      value: 
-      objectReference: {fileID: 1013615931}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: muteToggle
-      value: 
-      objectReference: {fileID: 1638286832}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: sfxVolText
-      value: 
-      objectReference: {fileID: 1707783027}
-    - target: {fileID: 7049526700901164205, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
-      propertyPath: audioManager
-      value: 
-      objectReference: {fileID: 1851238421}
     - target: {fileID: 7049526700901164206, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2059,7 +2046,7 @@ PrefabInstance:
     - target: {fileID: 7049526701043229532, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 440124755}
+      objectReference: {fileID: 440124761}
     - target: {fileID: 7049526701043229532, guid: 6cce442c0de67604b9ad7c3c1cf96c31, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
